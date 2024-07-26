@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer Example</title>
+    <!-- Tailwind CSS CDN for styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
 <body class="bg-[#659f8f]">
     <footer class="bg-[#659f8f] dark:bg-[#313131]">
         <div class="container mx-auto px-24 py-24">
-            <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr]  gap-10">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_1fr_1fr] gap-10">
                 <!-- Subscription Section -->
                 <div>
                     <h2 class="text-base font-bold mb-4">Subscribe to our newsletter for updates</h2>
                     <div class="flex flex-col sm:flex-row">
-                        <input id="email" type="email" placeholder="Enter your email" class="w-full sm:w-auto p-2 mb-2 sm:mb-0 sm:mr-2 rounded focus:outline-none">
+                        <!-- Email input field -->
+                        <input id="email" type="email" placeholder="Enter your email" class="w-full sm:w-auto p-2 mb-2 sm:mb-0 sm:mr-2 rounded focus:outline-none" aria-label="Email address">
+                        <!-- Subscribe button -->
                         <button class="w-full sm:w-auto px-6 py-2.5 bg-[#d86943] text-white rounded">Subscribe</button>
                     </div>
                 </div>
                 
                 <!-- Quick Links Section -->
-                <div class= text-sm >
+                <div class="text-sm">
                     <h2 class="font-bold mb-4">Quick Links</h2>
-                    <ul class=" space-y-4">
+                    <ul class="space-y-4">
+                        <!-- List of quick navigation links -->
                         <li><a href="#" class="hover:underline">Home</a></li>
                         <li><a href="#" class="hover:underline">Who We Are</a></li>
                         <li><a href="#" class="hover:underline">Our Philosophy</a></li>
@@ -34,6 +38,7 @@
                 <div class="text-sm">
                     <h2 class="font-bold mb-4">Technologies</h2>
                     <ul class="space-y-4">
+                        <!-- List of technology-related links -->
                         <li><a href="#" class="hover:underline">HTML</a></li>
                         <li><a href="#" class="hover:underline">CSS</a></li>
                         <li><a href="#" class="hover:underline">JavaScript</a></li>
@@ -41,9 +46,11 @@
                 </div>
             </div>
 
+            <!-- Divider line with color styling -->
             <hr class="my-6 border-[#d86943]">
             
             <div class="flex justify-left">
+                <!-- Footer Logo -->
                 <a href="#">
                     <img class="w-auto h-7" src="https://codespace-assets.global.ssl.fastly.net/wp/assets/website/codespace-primary-logo-light.svg" alt="Logo">
                 </a>
